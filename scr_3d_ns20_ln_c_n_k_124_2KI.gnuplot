@@ -18,6 +18,7 @@ set xrange [0.0 : 0.2]
 set zrange[0:1]
 
 set contour base
+set cntrparam levels incr 0,0.05,1
 set isosamples 100,100; set samples 100,100
 
 unset key
