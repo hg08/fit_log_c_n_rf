@@ -1,7 +1,7 @@
 #=======
 #setting
 #=======
-load '~/bin/hbacf_template.gnuplot'
+load './hbacf_template.gnuplot'
 set output "124_2KI_ns20_ln_c_n_k.eps"
 set size square 1.3, 1.5
 #set multiplot
@@ -13,12 +13,12 @@ set zlabel "{/Symbol D}" font "Sans,36"
 
 set grid lc rgbcolor "#BBBBBB"
 
-set yrange [0.0 : 1.0]
+set yrange [0.0 : 0.4]
 set xrange [0.0 : 0.2]  
 set zrange[0:1]
 
 set contour base
-set cntrparam levels incr 0,0.05,1
+set cntrparam levels incr 0,0.01,1
 set isosamples 100,100; set samples 100,100
 
 unset key
